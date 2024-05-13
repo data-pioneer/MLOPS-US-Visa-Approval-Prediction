@@ -5,12 +5,12 @@ This repository implements a Machine Learning Operations (MLOps) pipeline for a 
 
 ## Key Technologies:
 
-	-  Machine Learning Model: (KNeighborsClassifier, RandomForestClassifier) trained to predict visa approvals/rejections.
-	-  MongoDB: NoSQL database to store and manage database 
-	-  MLOps Pipeline: Data ingestion, Data Validation, Model training, model deployement are various pipeline used for effective project implementation. 
-	-  Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
-	-  AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
-	- GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
+-  Machine Learning Model: (KNeighborsClassifier, RandomForestClassifier) trained to predict visa approvals/rejections.
+-  MongoDB: NoSQL database to store and manage database 
+-  MLOps Pipeline: Data ingestion, Data Validation, Model training, model deployement are various pipeline used for effective project implementation. 
+-  Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
+-  AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
+- GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
 
 
 ## Project Structure:
