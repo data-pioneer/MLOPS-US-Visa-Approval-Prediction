@@ -1,8 +1,25 @@
 # MLOPS-US-Visa-Approval-Prediction
-## Live matarials docs
 
-[link](https://docs.google.com/document/d/1UFiHnyKRqgx8Lodsvdzu58LbVjdWHNf-uab2WmhE0A4/edit?usp=sharing)
+This repository implements a Machine Learning Operations (MLOps) pipeline for a US visa prediction application. The application leverages machine learning to predict visa approval/rejection decisions based on various applicant parameters. This project demonstrates the integration of key MLOps practices to automate the machine learning lifecycle, ensuring efficient deployment, monitoring, and maintenance.
 
+
+## Key Technologies:
+
+Machine Learning Model: (Specify the type of model you used, e.g., Random Forest, Logistic Regression, etc.) trained to predict visa approvals/rejections.
+MLOps Pipeline:
+Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
+AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
+GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
+
+
+## Project Structure:
+
+data/: Contains the training and testing datasets.
+models/: Houses the trained Random Forest model and any related files.
+src/: Includes the Python code for data preprocessing, model training, and prediction.
+docker/: Contains the Dockerfile and associated configuration files.
+ci/: Defines the GitHub Actions workflows for automation.
+README.md: This file (you're reading it now!).
 
 ## Git commands
 
