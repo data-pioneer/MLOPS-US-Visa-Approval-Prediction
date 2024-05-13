@@ -1,15 +1,16 @@
 # MLOPS-US-Visa-Approval-Prediction
 
-This repository implements a Machine Learning Operations (MLOps) pipeline for a US visa prediction application. The application leverages machine learning to predict visa approval/rejection decisions based on various applicant parameters. This project demonstrates the integration of key MLOps practices to automate the machine learning lifecycle, ensuring efficient deployment, monitoring, and maintenance.
+This repository implements a Machine Learning Operations (MLOps) pipeline for a US visa prediction application. The application using machine learning model to predict visa approval/rejection decisions based on various parameters. This project demonstrates the integration of key MLOps practices to automate the machine learning lifecycle, ensuring efficient deployment, monitoring, and maintenance.
 
 
 ## Key Technologies:
 
-Machine Learning Model: (Specify the type of model you used, e.g., Random Forest, Logistic Regression, etc.) trained to predict visa approvals/rejections.
-MLOps Pipeline:
-Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
-AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
-GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
+### Machine Learning Model: (KNeighborsClassifier, RandomForestClassifier) trained to predict visa approvals/rejections.
+### MongoDB: NoSQL database to store and manage database 
+### MLOps Pipeline: Data ingestion, Data Validation, Model training, model deployement are various pipeline used for effective project implementation. 
+### Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
+### AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
+### GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
 
 
 ## Project Structure:
