@@ -5,47 +5,47 @@ This repository implements a Machine Learning Operations (MLOps) pipeline for a 
 
 ## Key Technologies:
 
-. Machine Learning Model: (KNeighborsClassifier, RandomForestClassifier) trained to predict visa approvals/rejections.
-. MongoDB: NoSQL database to store and manage database 
-. MLOps Pipeline: Data ingestion, Data Validation, Model training, model deployement are various pipeline used for effective project implementation. 
-. Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
-. AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
-. GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
+	* Machine Learning Model: (KNeighborsClassifier, RandomForestClassifier) trained to predict visa approvals/rejections.
+	* MongoDB: NoSQL database to store and manage database 
+	* MLOps Pipeline: Data ingestion, Data Validation, Model training, model deployement are various pipeline used for effective project implementation. 
+	* Docker: Containerization for packaging the application and its dependencies, ensuring consistent execution across environments.
+	* AWS EC2: Cloud-based deployment platform for hosting the application in a scalable and cost-effective manner.
+	* GitHub Actions: Continuous Integration and Continuous Delivery (CI/CD) tool for automating the build, testing, and deployment of the application on AWS EC2 upon code changes.
 
 
 ## Project Structure:
 
-. Constant/init.py file
- * it contains folder,file,variable names, port number and URL used inside project. 
-. Artifact folder constains output of each steps like data ingestion, transformation, validation, model trainer. 
-. Config folder is user defined, user manually write these files for performing specific operation.
-. logs/logger.py class used to write Log at runtime. 
-. Static and template folder, files are used for flask implementation.
-. Components/DataIngestion
-	* it will fetch data from mongo db and USVisa.cv
- 	* It will split the Data into train.csv and test.csv files14:36 25-03-2024
-. Components/DataValidation 
-	* it will read both train and test csv files and preform bellow operations.
-	* firstly it will read schema file for validation purpose.
-	* it checks the number of cloumns exists as per schema file.
-	* it will verify numerical and categorial columns as well. 
-	* it will create report.yaml file and write drift state in that file.
- . Components/DataTransformation
-	* if validation status is true then only transformation will start. 
-	* it will read the test and train csv files. 
-	* drop unneccesary columns mentioned in schema file 
-	* add reduired cloumns. 
-	* apply smoteen from normalization. 
-	* finally convert dataframe into numpy array which are used for model training. 
-	* "preprocessing.pkl" file is used for normalization of input data by user.
-
-. Components/ModelTrainer
-	* initiate_model_trainer method will read numpy array files for model training. 
-	* ModelFactory with is a inbuit library from ineuron used to find best model which are written in model.yaml located in config folder. it will also perform hypertunnig of given models. 
-	* It retruns f1, precision, recall score. 
-	* best model details will be stored in "model.pkl" file inside trained_model folder, which we later copy into model folder.
-. Components/ModelEvaluation
-	* it will read model which is already uploaded inside S3 bucket and perform model evaluation
+	. Constant/init.py file
+	 	* it contains folder,file,variable names, port number and URL used inside project. 
+	. Artifact folder constains output of each steps like data ingestion, transformation, validation, model trainer. 
+	. Config folder is user defined, user manually write these files for performing specific operation.
+	. logs/logger.py class used to write Log at runtime. 
+	. Static and template folder, files are used for flask implementation.
+	. Components/DataIngestion
+		* it will fetch data from mongo db and USVisa.cv
+	 	* It will split the Data into train.csv and test.csv files14:36 25-03-2024
+	. Components/DataValidation 
+		* it will read both train and test csv files and preform bellow operations.
+		* firstly it will read schema file for validation purpose.
+		* it checks the number of cloumns exists as per schema file.
+		* it will verify numerical and categorial columns as well. 
+		* it will create report.yaml file and write drift state in that file.
+	 . Components/DataTransformation
+		* if validation status is true then only transformation will start. 
+		* it will read the test and train csv files. 
+		* drop unneccesary columns mentioned in schema file 
+		* add reduired cloumns. 
+		* apply smoteen from normalization. 
+		* finally convert dataframe into numpy array which are used for model training. 
+		* "preprocessing.pkl" file is used for normalization of input data by user.
+	
+	. Components/ModelTrainer
+		* initiate_model_trainer method will read numpy array files for model training. 
+		* ModelFactory with is a inbuit library from ineuron used to find best model which are written in model.yaml located in config folder. it will also perform hypertunnig of given models. 
+		* It retruns f1, precision, recall score. 
+		* best model details will be stored in "model.pkl" file inside trained_model folder, which we later copy into model folder.
+	. Components/ModelEvaluation
+		* it will read model which is already uploaded inside S3 bucket and perform model evaluation
 
 ## Git commands
 
