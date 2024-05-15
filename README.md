@@ -47,8 +47,13 @@ This repository implements a Machine Learning Operations (MLOps) pipeline for a 
 -  Components/ModelEvaluation
 		* it will read model which is already uploaded inside S3 bucket and perform model evaluation
 
-## Git commands
+## Flow Chart of Project Architecture
+![Us_Visa_Approval_Prediction](https://github.com/data-pioneer/MLOPS-US-Visa-Approval-Prediction/assets/33811437/52e63fe6-aa57-404b-a2ed-c5a5151e8646)
 
+
+
+
+## Git commands
 ```bash
 git add .
 
