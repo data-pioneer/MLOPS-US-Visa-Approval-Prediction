@@ -76,17 +76,13 @@ conda activate visa
 pip install -r requirements.txt
 ```
 
-```bash
-Workflow
-
-constant
-config_entity
-artifact_entity
-conponent
-pipeline
-app.py / demo.py
-
-```
+## Workflow of each component 
+- constant
+- config_entity
+- artifact_entity
+- conponent
+- pipeline
+- app.py / demo.py
 
 
 ### Export the  environment variable
@@ -108,7 +104,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 ## 2. Create IAM user for deployment
 
-	#with specific access
+	# with specific access
 
 	1. EC2 access : It is virtual machine
 
@@ -127,7 +123,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 	5. Lauch your docker image in EC2
 
-	#Policy:
+	# Policy:
 
 	1. AmazonEC2ContainerRegistryFullAccess
 
@@ -143,13 +139,13 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ## 5. Open EC2 and Install docker in EC2 Machine:
 	
 	
-	#optinal
+	# optinal
 
 	sudo apt-get update -y
 
 	sudo apt-get upgrade
 	
-	#required
+	# required
 
 	curl -fsSL https://get.docker.com -o get-docker.sh
 
