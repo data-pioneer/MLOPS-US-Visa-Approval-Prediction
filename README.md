@@ -47,8 +47,13 @@ This repository implements a Machine Learning Operations (MLOps) pipeline for a 
 -  Components/ModelEvaluation
 		* it will read model which is already uploaded inside S3 bucket and perform model evaluation
 
-## Git commands
+## Flow Chart of Project Architecture
+![Us_Visa_Approval_Prediction](https://github.com/data-pioneer/MLOPS-US-Visa-Approval-Prediction/assets/33811437/52e63fe6-aa57-404b-a2ed-c5a5151e8646)
 
+
+
+
+## Git commands
 ```bash
 git add .
 
@@ -71,17 +76,13 @@ conda activate visa
 pip install -r requirements.txt
 ```
 
-```bash
-Workflow
-
-constant
-config_entity
-artifact_entity
-conponent
-pipeline
-app.py / demo.py
-
-```
+## Workflow of each component 
+- constant
+- config_entity
+- artifact_entity
+- conponent
+- pipeline
+- app.py / demo.py
 
 
 ### Export the  environment variable
@@ -103,7 +104,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 ## 2. Create IAM user for deployment
 
-	#with specific access
+	# with specific access
 
 	1. EC2 access : It is virtual machine
 
@@ -122,7 +123,7 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 	5. Lauch your docker image in EC2
 
-	#Policy:
+	# Policy:
 
 	1. AmazonEC2ContainerRegistryFullAccess
 
@@ -138,13 +139,13 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ## 5. Open EC2 and Install docker in EC2 Machine:
 	
 	
-	#optinal
+	# optinal
 
 	sudo apt-get update -y
 
 	sudo apt-get upgrade
 	
-	#required
+	# required
 
 	curl -fsSL https://get.docker.com -o get-docker.sh
 
