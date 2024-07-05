@@ -166,4 +166,9 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
    - AWS_DEFAULT_REGION
    - ECR_REPO
 
-    
+# Deployment Screen: 
+![Screenshot 2024-07-05 111117](https://github.com/data-pioneer/MLOPS-US-Visa-Approval-Prediction/assets/33811437/40b23b93-c9de-41f3-8577-c3010429df58)
+
+
+
+![Screenshot 2024-07-05 111245](https://github.com/data-pioneer/MLOPS-US-Visa-Approval-Prediction/assets/33811437/5cbbe228-6a5e-4ee6-b67d-5e0df9316e71)
